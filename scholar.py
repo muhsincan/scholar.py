@@ -1010,6 +1010,24 @@ class ScholarQuerier(object):
             return False
 
         article.set_citation_data(data)
+	
+	#ADDED BY MUHSINCAN SESEN
+	#An attempt to parse the data(citation in bibtex format) to extract authors
+	data_split_list = data.split('\n')
+	for data_split in data_split_list:
+		if 'author={' in data_split:
+			data_split = data_split.split('={')[1]
+			data_split = data_split[0:len(data_split)-2]
+			authors_raw = data_split.split(' and ')
+	authors = ''
+	for author in authors_raw:
+		authors += author.split(', ')[1]
+		authors += ' '
+		authors += author.split(', ')[0]
+		authors += '\n'
+	print authors
+	print tex2uni[authors]
+	#END MUHSINCAN SESEN
         return True
 
     def parse(self, html):
