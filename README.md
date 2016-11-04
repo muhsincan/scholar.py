@@ -1,3 +1,7 @@
+This project is forked from Christian Kreibich in an attempt to revive the project and keep upgrading this amazing tool.
+
+I'll keep this project up to date by integrating your updates.
+
 scholar.py
 ==========
 
