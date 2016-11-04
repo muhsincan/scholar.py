@@ -2,6 +2,8 @@ This project is forked from Christian Kreibich in an attempt to revive the proje
 
 I'll keep this project up to date by integrating your updates.
 
+Original Readme:
+
 scholar.py
 ==========
 
@@ -22,14 +24,6 @@ Features
 * Supports retrieval of citation details in standard external formats as provided by Google Scholar, including BibTeX and EndNote.
 * Command-line tool prints entries in CSV format, simple plain text, or in the citation export format.
 * Cookie support for higher query volume, including ability to persist cookies to disk across invocations.
-
-Note
-----
-
-I will always strive to add features that increase the power of this
-API, but I will never add features that intentionally try to work
-around the query limits imposed by Google Scholar. Please don't ask me
-to add such features.
 
 Examples
 --------
